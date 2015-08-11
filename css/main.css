@@ -1,0 +1,712 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  
+}
+html {
+    /*color: #333;*/
+    font-size: 12px;
+    line-height: 1.4;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+    resize: vertical;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   General 
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Raleway', sans-serif;
+}
+h1 {
+  font-size: 1.5em;
+  letter-spacing: 15px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  /*color: #333;*/
+}
+a:hover {
+  -webkit-transition: all 800ms ease-out;
+  -moz-transition: all 800ms ease-out;
+  -o-transition: all 800ms ease-out;
+  -ms-transition: all 800ms ease-out;
+  transition: all 800ms ease-out;
+}
+/* ==========================================================================
+   General Layout / Structure
+   ========================================================================== */
+.container {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.portfolio-container {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.inner-container {
+  padding: 2em 0;
+  margin: 3em 0;
+  background: #111;
+}
+.center {
+  text-align: center;
+}
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+nav {
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1em;
+  z-index: 99;
+  position: fixed;
+  top: 0; 
+  left:0; 
+  right: 0;
+  font-family: 'Raleway', sans-serif;
+}
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 1em 0.5em;
+  }
+  nav a:hover {
+    color: yellow;
+  }
+  nav ul,
+  a {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav > ul > li {
+    margin-right: 1em;
+    display: inline;
+    font-size: 0.7em;
+  }
+  nav > ul > li:first-child {
+    font-size: 1.2em;
+  }
+/* ==========================================================================
+   Landing
+   ========================================================================== */
+#landing {
+  background: url(../img/a.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: -1.75em;
+  height: 100vh;
+}
+#landing h1 {
+  font-size: 3em;
+  padding-top: 5em;
+  font-weight: 700;
+}
+#name {
+  color: white;
+  text-align: center;
+}
+#name a,
+#name a:visited {
+  color: white;
+}
+#name a:hover {
+  background-color: white;
+  color: #333;
+}
+/* ==========================================================================
+   Thumbanail sizes
+   ========================================================================== */
+#portfolio img {
+    height: 150px;
+}
+#portfolio-page .thumbs img {
+  height: 150px;
+}
+/* ==========================================================================
+   Portfolio (Main Page)
+   ========================================================================== */
+#portfolio {
+  background: black;
+}
+.wrapper {
+  margin: 0;
+  float:left; /* important */  
+  position:relative; /* important(so we can absolutely position the description div */  
+}
+.description{  
+  position:absolute; /* absolute position (so we can position it where we want)*/  
+  bottom:0; /* position will be on bottom */  
+  left:0;  
+  width:100%;  
+  /* styling below */ 
+  text-align: left; 
+  background: rgba(200, 200, 200, 0.5);
+  font-size: 0.8em;  
+  color: black;
+}
+.description h2 {
+  padding-top: 6.1em;
+  margin-left: 10px;
+  font-weight: 900;
+}
+.description h3 {
+  padding-bottom: 0.5em;
+  margin-top: -1em;
+  margin-left: 10px;
+  font-weight: 700;
+}
+/*.description:hover {
+  opacity: 0;
+  color: #333;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}  */
+.description_content h2{  
+    padding-top:8.7em;  
+    margin:0px;  
+}
+/* ==========================================================================
+   Info
+   ========================================================================== */
+#info {
+  height: 80vh;
+  padding-top: 12em;
+  background-color: #333;
+  color: white;
+}
+#info-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 40%;
+  text-align: left;
+}
+/* ==========================================================================
+   Project Page
+   ========================================================================== */
+#portfolio-page {
+  background: black;
+}
+  #portfolio-page h2 {
+    color: gray;
+    font-weight: 700;
+  }
+img {
+  border: 1px solid #aaa;
+}
+.thumb a img {
+  width: 100%;
+}
+.thumbs {
+  padding: 2em 0;
+  margin: 0 auto;
+}
+.container p {
+  margin: 2em auto;
+  text-align: left;
+  color: gray;
+  /*width: 70%;*/
+  font-family: 'Roboto', sans-serif;
+}
+.thumbs ul li {
+  display: inline-block;
+  margin: 0.4em;
+}
+.container a,
+.container a:visited {
+  color: gray;
+  font-family: 'Raleway', sans-serif;
+}
+
+#links a,
+#links a:visited {
+  color: #444;
+  font-family: 'Raleway', sans-serif;
+}
+.link {
+  padding: 0.75em 1.5em;
+  /*color: green;*/
+}
+.link:hover {
+  border: 1px solid yellow;
+}
+a:hover {
+  color: yellow;
+}
+/*HOVER DARKEN*/
+a img:hover,
+.wrapper:hover {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-filter: brightness(80%);
+}
+.feature-image {
+  visibility: hidden;
+}
+#links {
+  font-size: 1em;
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+#links a {
+  display: block;
+  padding: 0.75em 1.5em;
+  margin-top: 0.5em;
+}
+#links a:hover {
+  color: yellow;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers:
+ */
+.hidden {
+    display: none !important;
+}
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+    visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 420px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  .container {
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    /*margin: 2em auto 1em auto;*/
+  }
+  .thumbs ul li {
+    display: inline-block;
+    margin: 0.5em;
+  }
+  
+  #landing h1 {
+    padding-top: 3em;
+  }
+  #links {
+  /*font-size: 0.6em;*/
+  /*font-weight: 900;*/
+  /*text-align: center;*/
+  /*padding-bottom: 2em;*/
+}
+/*#links a:nth-child(2) {
+  margin-top: 2em;
+}*/
+  #portfolio-page h2 {
+    /*color: gray;*/
+    /*font-weight: 700;*/
+  /*font-style: italic;*/
+  /*font-size: 3em;
+.wrapper {
+  margin: 0;
+  float:left; /* important */  
+  position:relative; /* important(so we can absolutely position the description div */  
+}
+.description {  
+  position:absolute; /* absolute position (so we can position it where we want)*/  
+  bottom:0; /* position will be on bottom */  
+  left:0;  
+  width:100%;  
+  /* styling below */ 
+  text-align: left;   
+  font-size: 0.8em;  
+  color: #333;
+  /*opacity:0.75;  transparency   */
+  /*filter:alpha(opacity=60); /* IE transparency   */
+}
+  .description h2 {
+    padding-top: 8.1em;
+    margin-left: 20px;
+    font-weight: 400;
+  }
+  .description h3 {
+    padding-bottom: 0.5em;
+    margin-top: -1em;
+    margin-left: 20px;
+    font-weight: 400;
+  }
+/*  .description:hover {
+    opacity: 0;
+    color: #333;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+  }  */
+  .description_content h2 {  
+    padding-top:8.7em;  
+    margin:0px;  
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  p {
+    line-height: 1.6;
+  }
+  h1 {
+    font-size: 3em; 
+  }
+  nav {
+/*  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.1);*/
+  padding: 0.75em;
+  /*position: fixed;*/
+  /*top: 0; */
+  /*left:0; */
+  /*right: 0;*/
+  /*font-family: 'Raleway', sans-serif;*/
+  }
+  nav a {
+    color: #eee;
+    letter-spacing: 8px;
+  }
+  nav a:hover {
+    color: yellow;
+  }
+  nav ul,
+  a {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav > ul > li {
+    padding: 0.5em 1em;
+    margin-right: 0.5em;
+    display: inline;
+    font-size: 0.8em;
+  }
+  nav > ul > li:first-child {
+    font-size: 1.4em;
+  }
+  #landing h1 {
+    font-size: 4em;
+    padding-top: 3em;
+    font-weight: 700;
+  }
+  #name {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 24em;
+  }
+  #portfolio {
+    min-height: 100vh;
+    padding-top: 6em;
+  }
+  #portfolio img {
+    width: 300px;
+    height: 300px;
+  }
+  #links {
+    padding-bottom: 3em;
+  }
+  #links a {
+    display: inline-block;
+  }
+  .container {
+    padding-top: 6em;
+  }
+  .feature-image {
+    visibility: visible;
+    width: 100%;
+    margin-top: 2em;
+  }
+  .small-feature {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  html {
+    font-size: 16px;
+  }
+  p {
+    line-height: 1.8;
+  }
+  #name {
+    text-align: left;
+  }
+    #name h1 {
+      border-bottom: 1px solid white;
+      margin-bottom: 0.5em;
+    }
+  .description {  
+  position:absolute; /* absolute position (so we can position it where we want)*/  
+  bottom:0; /* position will be on bottom */  
+  left:0;  
+  width:100%;  
+  /* styling below */ 
+  text-align: left;   
+  font-size: 0.8em;  
+  color: #333;
+  background: rgba(200, 200, 200, 0.9);
+  }
+  .description h2 {
+    padding-top: 0;
+    margin-left: 20px;
+    font-weight: 600;
+  }
+
+  .description_content h2 {  
+    padding-top:8.7em;  
+    margin:0px;  
+  }
+  #links {
+    padding-top: 3em;
+  }
+}
+
+@media only screen and (min-width: 1620px) {
+  html {
+    font-size: 18px;
+  }
+  p {
+    line-height: 2;
+  }
+  .container {
+    width: 60%;
+  }
+  .container-wide {
+    width: 85%;
+  }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show#links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
