@@ -521,15 +521,13 @@ img {
     -ms-transition: all 800ms ease-out;
     transition: all 800ms ease-out;
   }
-  nav a:hover {
+  nav a:hover,
+  .link:hover {
     color: yellow;
   }
   #name a:hover {
     background-color: white;
     color: #333;
-  }
-  .link:hover {
-    border: 1px solid yellow;
   }
   a img:hover,
   .wrapper:hover {
