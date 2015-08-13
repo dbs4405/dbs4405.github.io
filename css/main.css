@@ -521,7 +521,7 @@ img {
     -ms-transition: all 800ms ease-out;
     transition: all 800ms ease-out;
   }
-  nav a:hover,
+  nav a:hover
   {
     color: yellow;
   }
