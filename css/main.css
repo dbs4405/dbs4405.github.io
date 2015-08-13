@@ -107,9 +107,6 @@ h1 {
   margin-bottom: 0;
   font-weight: 700;
 }
-h4 {
-  fon
-}
 ul {
   list-style: none;
   padding: 0;
@@ -160,9 +157,6 @@ nav {
   nav a {
     text-decoration: none;
     color: white;
-    font-weight: 700;
-    letter-spacing: 2px;
-    padding: 1em 0.5em;
   }
   nav ul,
   a {
@@ -171,6 +165,9 @@ nav {
     padding: 0;
   }
   nav > ul > li {
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 1em 0.5em;
     margin-right: 1em;
     display: inline;
     font-size: 0.7em;
@@ -201,6 +198,13 @@ nav {
 #name a,
 #name a:visited {
   color: white;
+}
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fff;
 }
 /* ==========================================================================
    Thumbanail sizes
@@ -263,8 +267,8 @@ nav {
   font-size: 18px;
   background:
     linear-gradient(
-      rgba(255, 0, 0, 0.45), 
-      rgba(255, 255, 0, 0.45)
+      rgba(255, 0, 0, 0.4), 
+      rgba(255, 255, 0, 0.4)
     ), 
     url(../img/5.jpg) no-repeat center center; 
   -webkit-background-size: cover;
@@ -283,9 +287,9 @@ nav {
   margin: 0 auto;
   padding-top: 4em;
 }
-#info-text a {
+#info-text li {
   margin: 1em;
-  display: block;
+  font-weight: 800;
 }
 
 /* ==========================================================================
@@ -295,11 +299,11 @@ nav {
   background: black;
 }
   #portfolio-page h2 {
-    color: gray;
+    color: #ddd;
     font-weight: 400;
   }
     #portfolio-page h3 {
-    color: gray;
+    color: #ddd;
     font-weight: 200;
   }
 img {
@@ -315,7 +319,7 @@ img {
 }
 .container p {
   text-align: left;
-  color: gray;
+  color: #ddd;
   width: 90%;
   margin: 0 auto 2em auto;
 
@@ -326,7 +330,7 @@ img {
 }
 .container a,
 .container a:visited {
-  color: gray;
+  color: #ddd;
   font-family: 'Raleway', sans-serif;
 }
 .inner-container img {
@@ -434,7 +438,7 @@ img {
     font-size: 2.5em;
   }
   .container {
-    max-width: 70%;
+    width: 70%;
     text-align: center;
     margin: 0 auto;
     /*margin: 2em auto 1em auto;*/
@@ -448,6 +452,9 @@ img {
   }
   #landing h1 {
     padding-top: 3em;
+  }
+  #info-text li {
+    display: inline;
   }
 }
 
@@ -464,21 +471,23 @@ img {
   nav {
     padding: 0.75em;
   }
-  nav a {
-    letter-spacing: 8px;
-  }
   nav > ul > li {
     padding: 0.5em 1em;
     margin-right: 0.5em;
     display: inline;
     font-size: 0.8em;
+    letter-spacing: 8px;
   }
   nav > ul > li:first-child {
     font-size: 1.4em;
+    color: white;
+  }
+  .container {
+    width: 85%;
   }
   #landing h1 {
     font-size: 4em;
-    padding-top: 3em;
+    padding-top: 2em;
     font-weight: 700;
   }
   #name {
@@ -489,9 +498,26 @@ img {
     transform: translate(-50%, -50%);
     width: 24em;
   }
+  #name h1 {
+    text-align: left;
+    border-bottom: 1px solid white;
+  }
   #portfolio {
     min-height: 100vh;
     padding-top: 6em;
+  }
+  #portfolio-main-container {
+      padding-top: 2em;
+  }
+  .description {  
+    width:100%;
+    height: 26%;  
+  /* styling below */ 
+  /*font-size: 0.8em;  */
+  }
+  .description h2 {
+    padding-top: 0;
+    font-weight: 600;
   }
   #portfolio img {
     width: 300px;
@@ -521,7 +547,8 @@ img {
     display: none;
   }
   #info-text {
-      position: relative;
+  font-size: 1.25em;
+  position: relative;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -568,33 +595,12 @@ img {
     transition: all .5s ease;
     -webkit-filter: brightness(80%);
   }
-  .description:hover {
-    opacity: 0;
-    color: #333;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
-  }  
   #links a:hover {
     color: yellow;
   }
   #name h1 {
-    border-bottom: 1px solid white;
     margin-bottom: 0.5em;
   }
-  .description {  
-  width:100%;
-  height: 26%;  
-  /* styling below */ 
-  /*font-size: 0.8em;  */
-  }
-  .description h2 {
-    padding-top: 0;
-    font-weight: 600;
-  }
-
   #links {
     padding-top: 3em;
   }
