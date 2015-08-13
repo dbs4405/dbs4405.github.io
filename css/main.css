@@ -522,7 +522,7 @@ img {
     transition: all 800ms ease-out;
   }
   nav a:hover,
-  .link:hover {
+  {
     color: yellow;
   }
   #name a:hover {
@@ -539,6 +539,9 @@ img {
     -webkit-filter: brightness(80%);
   }
   #links a:hover {
+    color: yellow;
+  }
+  .container a:hover {
     color: yellow;
   }
   #name h1 {
