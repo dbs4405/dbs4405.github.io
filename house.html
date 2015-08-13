@@ -1,5 +1,8 @@
 <!doctype html>
-<html class="no-js" lang="">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,11 +13,12 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/lightbox.css">
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,900,700,600,500,300,200,100' rel='stylesheet' type='text/css'>
-
+  <!-- JavaScript—Modernizr -->
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body id="portfolio-page">
@@ -47,19 +51,18 @@
         <li><a class="example-image-link" href="img/house/10-img.jpg" data-lightbox="house" data-title="Proposed master suite plan."><img class="example-image" src="img/house/thumbs/10-img.jpg" alt="House"/></a></li>
         <li><a class="example-image-link" href="img/house/11-img.jpg" data-lightbox="house"><img class="example-image" src="img/house/thumbs/11-img.jpg" alt="House"/></a></li>
       </ul>
-    </div>
-  </div><!-- @end #container -->
+    </div><!-- end thumbs -->
+  </div><!-- end container -->
   <div id="links">
     <a href="brooklane.html">PREVIOUS</a>
     <a href="index.html#portfolio">RETURN TO PORTFOLIO</a>
     <a href="misc.html">NEXT</a>
-  </div>
+  </div><!-- end links -->
   <script>
     $(function() {
         $('#thumbnails a').lightBox();
     });
   </script>
-  <script src="js/lightbox-plus-jquery.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
   </body>
-   <!--  </div> --><!-- END LANDING -->
 </html>

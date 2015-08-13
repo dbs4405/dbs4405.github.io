@@ -90,12 +90,7 @@ textarea {
 /* ==========================================================================
    General 
    ========================================================================== */
-h1,
-h2,
-h3,
-h4,
-p,
-a {
+html {
   font-family: 'Raleway', sans-serif;
 }
 h1 {
@@ -114,7 +109,6 @@ ul {
 }
 a {
   text-decoration: none;
-  /*color: #333;*/
 }
 /* ==========================================================================
    General Layout / Structure
@@ -156,13 +150,11 @@ nav {
 }
   nav a {
     text-decoration: none;
-    color: white;
   }
-  nav ul,
-  a {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  nav,
+  nav a,
+  nav a:visited {
+    color: white;
   }
   nav > ul > li {
     font-weight: 700;
@@ -194,17 +186,9 @@ nav {
   font-weight: 700;
   text-align: center;
 }
-
 #name a,
 #name a:visited {
   color: white;
-}
-.arrow-down {
-  width: 0; 
-  height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #fff;
 }
 /* ==========================================================================
    Thumbanail sizes
@@ -224,14 +208,15 @@ nav {
 #portfolio-main-container .thumbs {
   padding-top: 2em;
 }
+/*wrapper and description for transparent overlay*/
 .wrapper {
   margin: 0;
   float:left; /* important */  
   position:relative; /* important(so we can absolutely position the description div */  
 }
-.wrapper a {
-  display: block;
-}
+  .wrapper a {
+    display: block;
+  }
 .description{  
   position:absolute; /* absolute position (so we can position it where we want)*/  
   bottom:0; /* position will be on bottom */  
@@ -244,24 +229,24 @@ nav {
   font-size: 0.8em;  
   color: black;
 }
-.description h2 {
-  padding-top: 4em;
-  margin-left: 10px;
-  font-weight: 600;
-  margin-bottom: -0.75em;
-}
-.description h3 {
-  /*padding-bottom: 0.5em;*/
-  /*margin-top: -1em;*/
-  padding-top: -2em;
-  margin-left: 10px;
-  font-weight: 500;
-}
+  .description h2 {
+    padding-top: 4em;
+    margin-left: 10px;
+    font-weight: 600;
+    margin-bottom: -0.75em;
+  }
+  .description h3 {
+    padding-top: -2em;
+    margin-left: 10px;
+    font-weight: 500;
+  }
 /* ==========================================================================
    Info
    ========================================================================== */
 #info {
+  height: 100vh;
   color: white;
+  text-align: center;
   padding-left: 0.5em;
   padding-right: 0.5em;
   font-size: 18px;
@@ -275,22 +260,20 @@ nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
-  text-align: center;
 }
-#info h1,
-#info a,
-#info a:visited {
-  color: white;
-}
-#info-text {
-  margin: 0 auto;
-  padding-top: 4em;
-}
-#info-text li {
-  margin: 1em;
-  font-weight: 800;
-}
+  #info h1,
+  #info a,
+  #info a:visited {
+    color: white;
+  }
+  #info-text {
+    margin: 0 auto;
+    padding-top: 4em;
+  }
+  #info-text li {
+    margin: 1em;
+    font-weight: 800;
+  }
 
 /* ==========================================================================
    Project Page
@@ -317,41 +300,29 @@ img {
   padding-bottom: 2em;
   margin: 0 auto;
 }
+  .thumbs ul li {
+    display: inline-block;
+    margin: 0.5em;
+  }
 .container p {
   text-align: left;
   color: #ddd;
   width: 90%;
   margin: 0 auto 2em auto;
-
-}
-.thumbs ul li {
-  display: inline-block;
-  margin: 0.4em;
 }
 .container a,
 .container a:visited {
   color: #ddd;
-  font-family: 'Raleway', sans-serif;
 }
 .inner-container img {
   max-width: 100%;
 }
-
-#links a,
-#links a:visited {
-  color: #444;
-  font-family: 'Raleway', sans-serif;
-}
-.link {
+.link { /*link out to web*/
   padding: 0.75em 1.5em;
-  /*color: green;*/
 }
 .large-image {
   width: 100%;
   margin: 2em auto; 
-}
-.feature-image {
-  visibility: hidden;
 }
 #links {
   font-size: 1em;
@@ -359,11 +330,15 @@ img {
   text-align: center;
   padding-bottom: 1.5em;
 }
-#links a {
-  display: block;
-  padding: 0.75em 1.5em;
-  margin-top: 0.5em;
-}
+  #links a {
+    display: block;
+    padding: 0.75em 1.5em;
+    margin-top: 0.5em;
+  }
+  #links a,
+  #links a:visited {
+    color: #444;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -439,16 +414,9 @@ img {
   }
   .container {
     width: 70%;
-    text-align: center;
-    margin: 0 auto;
-    /*margin: 2em auto 1em auto;*/
   }
   #portfolio-main-container {
     width: 80%;
-  }
-  .thumbs ul li {
-    display: inline-block;
-    margin: 0.5em;
   }
   #landing h1 {
     padding-top: 3em;
@@ -471,24 +439,18 @@ img {
   nav {
     padding: 0.75em;
   }
-  nav > ul > li {
-    padding: 0.5em 1em;
-    margin-right: 0.5em;
-    display: inline;
-    font-size: 0.8em;
-    letter-spacing: 8px;
-  }
-  nav > ul > li:first-child {
-    font-size: 1.4em;
-    color: white;
-  }
+    nav > ul > li {
+      padding: 0.5em 1em;
+      margin-right: 0.5em;
+      font-size: 0.8em;
+      letter-spacing: 8px;
+    }
+    nav > ul > li:first-child {
+      font-size: 1.4em;
+    }
   .container {
     width: 85%;
-  }
-  #landing h1 {
-    font-size: 4em;
-    padding-top: 2em;
-    font-weight: 700;
+    padding-top: 6em;
   }
   #name {
     position: relative;
@@ -498,10 +460,13 @@ img {
     transform: translate(-50%, -50%);
     width: 24em;
   }
-  #name h1 {
-    text-align: left;
-    border-bottom: 1px solid white;
-  }
+    #name h1 {
+      font-size: 4em;
+      padding-top: 2em;
+      font-weight: 700;
+      text-align: left;
+      border-bottom: 1px solid white;
+    }
   #portfolio {
     min-height: 100vh;
     padding-top: 6em;
@@ -512,18 +477,13 @@ img {
   .description {  
     width:100%;
     height: 26%;  
-  /* styling below */ 
-  /*font-size: 0.8em;  */
   }
-  .description h2 {
-    padding-top: 0;
-    font-weight: 600;
-  }
+    .description h2 {
+      padding-top: 0;
+      font-weight: 600;
+    }
   #portfolio img {
     width: 300px;
-    height: 300px;
-  }
-  #portfolio img {
     height: 300px;
   }
   #portfolio-page .thumbs img {
@@ -532,27 +492,16 @@ img {
   #links {
     padding-bottom: 3em;
   }
-  #links a {
-    display: inline-block;
-  }
-  .container {
-    padding-top: 6em;
-  }
-  .feature-image {
-    visibility: visible;
-    width: 100%;
-    margin-top: 2em;
-  }
-  .small-feature {
-    display: none;
-  }
+    #links a {
+      display: inline-block;
+    }
   #info-text {
-  font-size: 1.25em;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+    font-size: 1.25em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -572,9 +521,6 @@ img {
     -ms-transition: all 800ms ease-out;
     transition: all 800ms ease-out;
   }
-  a:hover {
-    color: yellow;
-  }
   nav a:hover {
     color: yellow;
   }
@@ -585,7 +531,6 @@ img {
   .link:hover {
     border: 1px solid yellow;
   }
-  /*HOVER DARKEN*/
   a img:hover,
   .wrapper:hover {
     -webkit-transition: all .5s ease;
