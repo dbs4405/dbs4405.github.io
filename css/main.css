@@ -515,11 +515,11 @@ img {
     text-align: left;
   }
   a:hover {
-    -webkit-transition: all 800ms ease-out;
-    -moz-transition: all 800ms ease-out;
-    -o-transition: all 800ms ease-out;
-    -ms-transition: all 800ms ease-out;
-    transition: all 800ms ease-out;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
   }
   nav a:hover
   {
