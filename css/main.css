@@ -126,6 +126,13 @@ a {
   padding-top: 5em;
   padding-bottom: 2em;
 }
+#services-main-container {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
 .inner-container {
   padding: 1em 0 0 0;
   margin: 3em 0;
@@ -486,6 +493,13 @@ img {
     padding-top: 6em;
   }
   #portfolio-main-container {
+      padding-top: 2em;
+  }
+    #services {
+    min-height: 100vh;
+    padding-top: 6em;
+  }
+  #services-main-container {
       padding-top: 2em;
   }
   .description {  
