@@ -119,7 +119,7 @@ a {
   margin: 0 auto;
   padding-top: 5em;
 }
-#portfolio-main-container {
+#projects-main-container {
   width: 90%;
   text-align: center;
   margin: 0 auto;
@@ -212,9 +212,9 @@ nav {
 }
 
 /* ==========================================================================
-   Thumbanail sizes
+   Thumbnail sizes
    ========================================================================== */
-#portfolio img {
+#projects img {
     height: 120px;
 }
 #portfolio-page .thumbs img {
@@ -223,10 +223,10 @@ nav {
 /* ==========================================================================
    Portfolio (Main Page)
    ========================================================================== */
-#portfolio {
+#projecs {
   background: black;
 }
-#portfolio-main-container .thumbs {
+#projects-main-container .thumbs {
   padding-top: 2em;
 }
 /*wrapper and description for transparent overlay*/
@@ -436,7 +436,7 @@ img {
   .container {
     width: 70%;
   }
-  #portfolio-main-container {
+  #projects-main-container {
     width: 80%;
   }
   #landing h1 {
@@ -488,11 +488,11 @@ img {
       text-align: left;
       border-bottom: 1px solid white;
     }
-  #portfolio {
+  #projects {
     min-height: 100vh;
     padding-top: 6em;
   }
-  #portfolio-main-container {
+  #projects-main-container {
       padding-top: 2em;
   }
     #services {
@@ -510,7 +510,7 @@ img {
       padding-top: 0;
       font-weight: 600;
     }
-  #portfolio img {
+  #projects img {
     width: 300px;
     height: 300px;
   }
