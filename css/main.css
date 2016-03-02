@@ -215,7 +215,7 @@ nav {
     background:
     linear-gradient(
       rgba(255, 255, 255, 0.4), 
-      rgba(0, 0, 0, 0.4)
+      rgba(0, 0, 0, 1)
     ), 
     url(../img/b.jpg) no-repeat center center;
   /*background: url(../img/b.jpg) no-repeat center center; */
