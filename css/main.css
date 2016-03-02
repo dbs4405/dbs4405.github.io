@@ -183,8 +183,8 @@ nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-top: -1.75em;
-  padding-bottom: 1.75em;
+  /*margin-top: -1.75em;*/
+  /*padding-bottom: 1.75em;*/
   height: 100vh;
 }
 #name h1 {
@@ -206,8 +206,8 @@ nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-top: -1.75em;
-  padding-bottom: 1.75em;
+  /*margin-top: -1.75em;*/
+  /*padding-bottom: 1.75em;*/
   /*height: 100vh;*/
   text-align: center;
   color: white;
@@ -487,7 +487,7 @@ img {
       font-size: 4em;
       padding-top: 2em;
       font-weight: 700;
-      text-align: left;
+      /*text-align: left;*/
       border-bottom: 1px solid white;
     }
   #projects {
