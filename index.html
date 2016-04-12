@@ -19,6 +19,13 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,900,700,600,500,300,200,100' rel='stylesheet' type='text/css'>
     <!-- JavaScript—Modernizr -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <system.webServer>
+  <httpProtocol>
+    <customHeaders>
+      <add name="Content-Security-Policy" value="frame-ancestors 'self';" />
+    </customHeaders>
+  </httpProtocol>
+</system.webServer>
   </head>
 <body>
   <!--[if lt IE 89]>
